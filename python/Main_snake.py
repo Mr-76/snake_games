@@ -32,11 +32,14 @@ while not game_over:
         print(event)
         snake_x_y = Snake.get_x_y_pos() 
         if (event.type ==  pygame.quit) or ((snake_x_y[0]>= screen_h) or (snake_x_y[0]<=0)) or ((snake_x_y[1]>= screen_w) or (snake_x_y[1]<=0)):
+            game_over = True
+            
+        if (event.type ==  pygame.KEYDOWN):
             if event.key == pygame.K_LEFT:
-                #Snake.sub_pace(10,0)#unprivate the method
-                #_snake_x_add_pace not geting changed :()
-                Snake._snake_x_add_pace = -10
-                Snake._snake_y_add_pace = 0 
+               Snake.sub_pace(10,0)#unprivate the method
+               #_snake_x_add_pace not geting changed :()
+               # Snake._snake_x_add_pace = -10
+               # Snake._snake_y_add_pace = 0 
             elif event.key == pygame.K_RIGHT:
                 Snake.add_pace(10,0)
             elif event.key == pygame.K_UP:
