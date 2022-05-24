@@ -40,10 +40,10 @@ while not game_over:
     for event in pygame.event.get():#eventos ex: mouse se movendo
         print(event)
         if (event.type ==  pygame.quit) or ((x1>= 800) or (x1<=0)) or ((y1>= 600) or (y1<=0)): #apertar botao de fechar a janela ao chegar ao maximo da tela prog fecha
-            game_over = true
     
         if event.type ==  pygame.keydown: #apertar botao de fechar a janela
-            if event.key == pygame.k_left:
+            game_over = True
+            if event.key == pygame.K_LEFT:
                 x1_change = -10
                 y1_change = 0
             elif event.key == pygame.k_right:
