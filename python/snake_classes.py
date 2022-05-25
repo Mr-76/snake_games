@@ -1,9 +1,8 @@
 class snake:
-    def __init__(self,snake_lenght,snake_color,snake_pace):
+    def __init__(self,snake_lenght,snake_color):
         self._snake_lenght = snake_lenght
         self._snake_body = []
         self._snake_color = snake_color
-        self._snake_default_pace = snake_pace
         self._snake_x_pos = 0 #call map to set it on creation 
         self._snake_y_pos = 0
         self._snake_head = [] #unset every loop
