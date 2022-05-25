@@ -10,6 +10,9 @@ class snake:
         self._snake_x_add_pace = 0  
         self._snake_y_add_pace = 0
     
+    def get_snake_color(self):
+        return self._snake_color
+
     def snake_grow(self):
         self._snake_lenght += 1
     
