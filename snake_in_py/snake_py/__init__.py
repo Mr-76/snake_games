@@ -1,1 +1,1 @@
-from .Main_snake import main
+from .Main import main
