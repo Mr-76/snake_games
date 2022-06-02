@@ -12,15 +12,15 @@ and check_quit
 import sys
 import random
 import pygame
-from .snake_classes import snake
-from .map_class import Map_snake
+from .snake_classes import Snake
+from .map_class import MapSnake
 
 def main():
     """Main function runs all the code """
     black = (0,0,0)
     block_sizes = 15
-    game_map = Map_snake(800,600,(0,222,222)) #still need to chage class names
-    player_snake = snake(1,(0,200,0))
+    game_map = MapSnake(800,600,(0,222,222)) #still need to chage class names
+    player_snake = Snake(1,(0,200,0))
 
     pygame.init()
     display = pygame.display.set_mode((game_map.get_screen_h(),

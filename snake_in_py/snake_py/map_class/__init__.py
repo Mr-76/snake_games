@@ -1,1 +1,1 @@
-from .map_class import Map_snake
+from .map_class import MapSnake

@@ -1,1 +1,1 @@
-from .snake_classes import snake
+from .snake_classes import Snake
